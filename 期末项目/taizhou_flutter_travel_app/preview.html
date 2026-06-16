@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>台州旅行推荐 App 预览</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Microsoft YaHei", Arial, sans-serif; background: #f5f7fb; color: #172033; }
+    .phone { width: min(430px, 100vw); min-height: 100vh; margin: 0 auto; background: #fff; box-shadow: 0 0 32px rgba(20,35,70,.16); }
+    header { padding: 26px 18px 12px; position: sticky; top: 0; z-index: 2; background: linear-gradient(180deg,#fff,#f0fbfb); border-bottom: 1px solid #d6eeee; }
+    h1 { margin: 0; font-size: 25px; color: #153b44; }
+    .sub { margin-top: 6px; color: #6a7282; font-size: 13px; }
+    main { padding: 14px 16px 92px; }
+    .hero { height: 205px; padding: 22px; border-radius: 24px; color: #fff; display: flex; flex-direction: column; justify-content: end; background: linear-gradient(135deg,#087b8f,#70c1b3 54%,#f2c166); }
+    .hero strong { display: block; font-size: 34px; font-weight: 900; }
+    .hero span { font-weight: 700; }
+    .title { margin: 18px 0 10px; font-size: 20px; font-weight: 900; }
+    .card { border: 1px solid rgba(20,30,55,.08); border-radius: 18px; padding: 15px; margin-bottom: 12px; background: #fff; line-height: 1.65; box-shadow: 0 8px 18px rgba(20,35,70,.06); }
+    .teal { background: #edf8fa; } .blue { background: #e5f4ff; } .yellow { background: #fff7df; } .orange { background: #fff1dc; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .feature { min-height: 132px; display: flex; flex-direction: column; justify-content: space-between; }
+    .icon { width: 44px; height: 44px; border-radius: 50%; display: inline-grid; place-items: center; background: #fff; color: #087b8f; font-weight: 900; margin-bottom: 8px; }
+    b { font-size: 18px; }
+    .tag { float: right; background: #fff; border-radius: 999px; padding: 3px 9px; font-size: 12px; font-weight: 700; }
+    .page { display: none; } .page.active { display: block; }
+    nav { position: fixed; left: 50%; bottom: 0; transform: translateX(-50%); width: min(430px, 100vw); height: 76px; background: rgba(255,255,255,.96); border-top: 1px solid #d6eeee; display: grid; grid-template-columns: repeat(5, 1fr); }
+    button { border: 0; background: transparent; color: #687084; font: inherit; font-size: 11px; display: grid; place-items: center; cursor: pointer; }
+    button span { font-size: 23px; } button.active { color: #087b8f; font-weight: 900; }
+    .route { display: grid; grid-template-columns: 62px 1fr; gap: 12px; }
+    .time { color: #087b8f; font-weight: 900; text-align: center; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <header><h1 id="pageTitle">台州，山海水城</h1><div class="sub" id="pageSub">浙江东部的海岸、古城与糯叽叽美食旅行</div></header>
+    <main>
+      <section class="page active" data-title="台州，山海水城" data-sub="浙江东部的海岸、古城与糯叽叽美食旅行">
+        <div class="hero"><strong>台州 Taizhou</strong><span>山海水城，糯香与海风一起抵达。</span></div>
+        <div class="title">📍 家乡地区介绍</div>
+        <div class="card teal">台州位于浙江省东部沿海，有山、有海、有古城，也有很有特色的糯米类小吃。来台州旅行，可以去神仙居看奇峰云海，到临海古城墙感受历史，还可以去椒江、温岭体验海边风光和海鲜美食。</div>
+        <div class="title">⭐ 旅行亮点</div>
+        <div class="grid">
+          <div class="card feature"><div><span class="icon">山</span><br><b>神仙居山景</b></div><span>奇峰、云海、玻璃栈道很适合拍照</span></div>
+          <div class="card feature"><div><span class="icon">古</span><br><b>临海古城</b></div><span>江南长城和紫阳街有历史氛围</span></div>
+          <div class="card feature"><div><span class="icon">海</span><br><b>东海海岸</b></div><span>温岭石塘、海边日出很有特色</span></div>
+          <div class="card feature"><div><span class="icon">食</span><br><b>台州美食</b></div><span>食饼筒、麦虾、嵌糕和海鲜值得尝试</span></div>
+        </div>
+      </section>
+      <section class="page" data-title="台州代表旅游景点" data-sub="山景、古城、海岸和城市烟火">
+        <div class="card teal"><span class="tag">必去</span><b>⛰ 神仙居</b><br>神仙居是台州最有代表性的山水景区之一，山峰造型独特，云雾天气尤其有仙气。</div>
+        <div class="card orange"><span class="tag">历史</span><b>🏯 临海古城墙</b><br>临海古城墙又被称为江南长城，可以登城墙看城市，也可以顺路逛紫阳街。</div>
+        <div class="card blue"><span class="tag">海边</span><b>🌊 温岭石塘</b><br>石塘有彩色小箬村、海边公路和渔港风景，适合看日出和拍海边照片。</div>
+      </section>
+      <section class="page" data-title="台州代表美食" data-sub="糯米、海鲜、面食和街头小吃">
+        <div class="card orange"><b>台州食饼筒</b><br>把多种菜卷进薄饼里，口感丰富，是台州很有代表性的传统美食。</div>
+        <div class="card teal"><b>台州麦虾</b><br>一种面疙瘩类小吃，汤底鲜香，吃起来很有家常味。</div>
+        <div class="card yellow"><b>温岭嵌糕</b><br>糯米外皮包入各种馅料，软糯又顶饱，是人气早餐或小吃。</div>
+        <div class="card blue"><b>东海海鲜</b><br>靠海的台州海鲜资源丰富，鱼、虾、蟹和贝类都很适合游客品尝。</div>
+      </section>
+      <section class="page" data-title="推荐旅行路线" data-sub="1日轻旅行，适合第一次来台州">
+        <div class="card route"><div class="time">09:00</div><div><b>临海古城墙</b><br>上午登江南长城，看古城风景。</div></div>
+        <div class="card route"><div class="time">12:00</div><div><b>紫阳街午餐</b><br>品尝食饼筒、麦虾、嵌糕等小吃。</div></div>
+        <div class="card route"><div class="time">14:00</div><div><b>神仙居景区</b><br>下午看山景、栈道和自然风光。</div></div>
+        <div class="card route"><div class="time">18:00</div><div><b>海鲜晚餐</b><br>体验台州沿海味道。</div></div>
+      </section>
+      <section class="page" data-title="AI 使用内容" data-sub="按作业要求说明 AI 如何辅助项目">
+        <div class="card"><b>文案整理</b><br>使用 AI 帮助整理台州简介、景点介绍、美食介绍和路线说明。</div>
+        <div class="card"><b>页面设计</b><br>使用 AI 参考“山海水城、海岸旅行、古城漫步”的方向设计界面。</div>
+        <div class="card yellow"><b>项目执行心得</b><br>通过这个 App，我把浙江台州整理成适合游客阅读的旅行推荐页面。</div>
+      </section>
+    </main>
+    <nav><button class="active"><span>🏠</span>台州介绍</button><button><span>⛰</span>代表景点</button><button><span>🍲</span>代表美食</button><button><span>🗺</span>推荐路线</button><button><span>✨</span>AI说明</button></nav>
+  </div>
+  <script>
+    const buttons=[...document.querySelectorAll("button")],pages=[...document.querySelectorAll(".page")],title=document.querySelector("#pageTitle"),sub=document.querySelector("#pageSub");
+    buttons.forEach((button,index)=>button.addEventListener("click",()=>{buttons.forEach(i=>i.classList.remove("active"));pages.forEach(i=>i.classList.remove("active"));button.classList.add("active");pages[index].classList.add("active");title.textContent=pages[index].dataset.title;sub.textContent=pages[index].dataset.sub;}));
+  </script>
+</body>
+</html>
